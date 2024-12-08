@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Build Your Professional Resume</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biodata.html">Bio-data</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="resumeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" required></textarea>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" required></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea>
+
+            <label for="achievements">Achievements:</label>
+            <textarea id="achievements" name="achievements"></textarea>
+
+            <label for="objective">Objective:</label>
+            <textarea id="objective" name="objective"></textarea>
+
+            <label for="references">References:</label>
+            <textarea id="references" name="references"></textarea>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resumeOutput" style="display: none;">
+            <h3>Generated Resume</h3>
+            <p><strong>Name:</strong> <span id="outputName"></span></p>
+            <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+            <p><strong>Skills:</strong> <span id="outputSkills"></span></p>
+            <p><strong>Experience:</strong> <span id="outputExperience"></span></p>
+            <p><strong>Education:</strong> <span id="outputEducation"></span></p>
+            <p><strong>Achievements:</strong> <span id="outputAchievements"></span></p>
+            <p><strong>Objective:</strong> <span id="outputObjective"></span></p>
+            <p><strong>References:</strong> <span id="outputReferences"></span></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
+</html>
